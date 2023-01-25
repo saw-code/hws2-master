@@ -1,31 +1,59 @@
 .greetingForm {
+
 }
 
 .inputAndButtonContainer {
+
 }
 
 .error {
+    color: #cc0000;
 }
 
 .input {
+
 }
 
 .input:focus {
+
 }
 
 .errorInput {
+    border: red 1px solid;
 }
 
 .button {
+    height: 36px;
+    width: 78px;
+    left: 454px;
+    top: 224px;
+    border-radius: 3px;
+    padding: 5px 24px 5px 24px;
+    background-color: #0066CC;
+    opacity: 0.5;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* identical to box height, or 143% */
+
+    /* Light /140 */
+    color: #FFFFFF;
+
 }
 
 .button:focus {
+
 }
 
 .button:active {
+
 }
 
 .button:disabled {
+
 }
 
 .text {
