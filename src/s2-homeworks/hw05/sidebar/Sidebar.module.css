@@ -1,4 +1,5 @@
 .sidebar {
+
 }
 
 .sidebar.open {
@@ -8,18 +9,23 @@
 }
 
 .nav {
+
 }
 
 .nav a {
+    color: #000000;
 }
 
 .nav a:hover {
 }
 
 .nav a.active {
+    color: #58ACFF;
 }
+
 .close {
 }
 
 .close img {
 }
+
