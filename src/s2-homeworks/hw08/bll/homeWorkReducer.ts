@@ -8,7 +8,7 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
   switch (action.type) {
     case 'sort': { // by name
       let sortUp = [...state].sort((a, b) => a.name.localeCompare(b.name))
-      let sortDown = [...state].sort((a, b) => b.name.localeCompare(a.name))
+      let sortDown = [...state].sort((a, b) => a.age - b.age)
 
       return action.payload === "up"
         ? sortUp : action.payload === 'down'
@@ -16,7 +16,8 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
     }
     case 'check': {
       let copyState = [...state]
-      return copyState.filter(el => el.age > action.payload) // need to fix
+      return copyState.filter(el => el.age > action.payload)
+        .sort((a, b) => a.age - b.age) // need to fix
     }
     default:
       return state
