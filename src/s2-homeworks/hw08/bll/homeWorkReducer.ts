@@ -17,7 +17,7 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
     case 'check': {
       let copyState = [...state]
       return copyState.filter(el => el.age > action.payload)
-        .sort((a, b) => b.age - a.age) // need to fix
+        .sort((a, b) => a._id - b._id) // need to fix
     }
     default:
       return state
